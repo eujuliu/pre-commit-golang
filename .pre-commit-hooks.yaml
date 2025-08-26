@@ -1,6 +1,6 @@
 - id: golangci-lint
   name: "golangci-lint"
-  entry: ./.pre-commit/run-golangci-lint.sh
+  entry: run-golangci-lint.sh
   types: [go]
   language: "script"
   pass_filenames: false
@@ -8,7 +8,7 @@
 
 - id: golangci-fmt
   name: "golangci-fmt"
-  entry: ./.pre-commit/run-golangci-fmt.sh
+  entry: run-golangci-fmt.sh
   types: [go]
   language: "script"
   pass_filenames: false
@@ -16,7 +16,7 @@
 
 - id: go-unit-tests
   name: "go-unit-tests"
-  entry: ./.pre-commit/run-go-unit-tests.sh
+  entry: run-go-unit-tests.sh
   files: '\.go$'
   language: "script"
   description: "Runs `go test`"
